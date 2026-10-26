@@ -30,38 +30,56 @@
       <p class="eyebrow">Bonjour, je suis</p>
       <h1>Yassine Faraj</h1>
       <p class="role">Étudiant en 3<sup>e</sup> année — Ingénierie logicielle</p>
-      <p class="lead">Je transforme des idées en logiciels, du code bas niveau aux interfaces graphiques. Je suis à la recherche de projets et d'un stage pour mettre mes compétences en pratique.</p>
+      <p class="lead">Je transforme des idées en logiciels et en interfaces web avec React et Vue.js. Du moteur de jeu en C++ au design UI/UX avec 21st.dev, j'aime relier la logique à l'expérience utilisateur. Je recherche des projets et un stage pour mettre mes compétences en pratique.</p>
       <div class="cta">
         <a class="btn" href="#projects">Voir mes projets</a>
         <a class="btn ghost" href="#contact">Me contacter</a>
       </div>
     </div>
     <div class="hero-photo reveal">
-      <div class="tilt photo-3d"><span class="glare"></span><img src="photo.png" alt="Portrait de Yassine Faraj en costume bleu marine et cravate bordeaux" width="480" height="640" fetchpriority="high"></div>
+      <div class="tilt photo-3d"><span class="glare"></span><img src="portrait-yassine.jpeg" alt="Portrait de Yassine Faraj en chemise blanche" width="1086" height="1448" fetchpriority="high"></div>
     </div>
   </section>
 
   <section id="about" class="section reveal">
     <h2>À propos</h2>
     <div class="about-grid">
-      <p>Étudiant en troisième année d'ingénierie logicielle à l'ESISA, à Fès, je me forme à la conception et au développement de logiciels. Je travaille aussi bien sur le web (HTML, CSS, JavaScript) que sur des langages plus proches de la machine comme le C, le C++ et l'assembleur. J'aime comprendre comment les choses fonctionnent de l'intérieur et construire des projets complets, de la logique jusqu'à l'interface.</p>
-      <ul class="stats"><li><strong>3<sup>e</sup></strong><span>Année d'ingénierie</span></li><li><strong>9</strong><span>Technologies</span></li><li><strong>1</strong><span>Projet présenté</span></li></ul>
+      <p>Étudiant en troisième année d'ingénierie logicielle à l'ESISA, à Fès, je me forme à la conception et au développement de logiciels. Je travaille sur le frontend avec HTML, CSS, JavaScript, React et Vue.js, tout en développant mes bases en C, C++, Python, SQL et assembleur. Pour la partie visuelle, j'utilise 21st.dev et travaille le design UI/UX afin de créer des interfaces claires et adaptées aux différents écrans. J'approfondis également le développement full stack avec la stack MERN.</p>
+      <ul class="stats"><li><strong>3<sup>e</sup></strong><span>Année d'ingénierie</span></li><li><strong>6</strong><span>Domaines de compétences</span></li><li><strong>2</strong><span>Projets présentés</span></li></ul>
     </div>
   </section>
 
   <section id="skills" class="section reveal">
     <h2>Compétences</h2>
-    <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>C</li><li>C++</li><li>SQL</li><li>Python</li><li>Assembleur</li><li>Linux</li></ul>
+    <p class="section-intro">Les technologies que j'utilise, mes outils de conception et les sujets que j'approfondis.</p>
+    <div class="skills-grid">
+      <article class="skill-group"><h3>Développement frontend</h3><p>Construire des interfaces web et leurs interactions.</p><ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Vue.js</li></ul></article>
+      <article class="skill-group"><h3>Design &amp; expérience utilisateur</h3><p>Concevoir des interfaces lisibles et adaptées au mobile.</p><ul class="chips"><li>UI/UX</li><li>21st.dev</li><li>Responsive design</li></ul></article>
+      <article class="skill-group"><h3>Programmation &amp; données</h3><p>Développer la logique, manipuler les données et créer des applications de bureau avec Qt.</p><ul class="chips"><li>C</li><li>C++</li><li>Java</li><li>Python</li><li>SQL</li><li>Assembleur</li><li>Qt 6 / Qt Widgets</li></ul></article>
+      <article class="skill-group"><h3>R, Maple &amp; MATLAB</h3><ul class="chips"><li>R</li><li>Maple</li><li>MATLAB</li></ul></article>
+      <article class="skill-group"><h3>Outils &amp; environnement</h3><p>Versionner mes projets, configurer leur compilation avec CMake et travailler sous Linux.</p><ul class="chips"><li>Git</li><li>GitHub</li><li>Linux</li><li>CMake</li></ul></article>
+      <article class="skill-group learning"><div class="skill-heading"><h3>Backend &amp; stack MERN</h3><span class="status">En apprentissage</span></div><p>Développer des API REST avec Node.js et Express, manipuler les données avec MongoDB et Mongoose, et tester les opérations CRUD avec Postman. Utiliser MongoDB Atlas pour l'hébergement et MongoDB Compass pour explorer les bases de données. Approfondir le hachage des mots de passe avec bcryptjs et la connexion du frontend React à l'API.</p><ul class="chips"><li>Node.js</li><li>Express</li><li>MongoDB</li><li>MongoDB Atlas</li><li>MongoDB Compass</li><li>Mongoose</li><li>API REST / CRUD</li><li>Postman</li><li>bcryptjs</li><li>npm</li><li>Vite</li></ul></article>
+    </div>
   </section>
 
   <section id="projects" class="section reveal">
     <h2>Projets</h2>
     <div class="cards">
       <article class="card tilt wide">
-        <h3>Jeu d'échecs en C++</h3>
-        <p>Un jeu d'échecs complet développé en C++, composé de deux parties : le moteur du jeu (la logique) et une interface graphique pour jouer.</p>
-        <p class="tags">C++ · Interface graphique · Logique de jeu</p>
-        <a href="https://github.com/yfaraj-PRO" class="link" target="_blank" rel="noopener">Voir sur GitHub →</a>
+        <p class="project-label"><span aria-hidden="true">♞</span> Application de bureau · Jeu d'échecs</p>
+        <h3>Qt Chess Game — C++ &amp; Qt</h3>
+        <p>Une application de bureau développée en C++ avec Qt 6, qui associe un moteur de jeu à un échiquier graphique interactif. Le projet sépare la logique des échecs, le dessin du plateau et les commandes de la fenêtre.</p>
+        <ul class="project-details"><li><strong>Échiquier interactif</strong><span>Sélection et déplacement des pièces à la souris, avec surbrillance des cases.</span></li><li><strong>Deux modes de jeu</strong><span>Joueur contre joueur ou joueur contre l'ordinateur.</span></li><li><strong>Règles &amp; état de la partie</strong><span>Validation des déplacements, protection du roi et détection de l'échec, du mat et du pat.</span></li><li><strong>Interface Qt Widgets</strong><span>Choix du mode, réinitialisation de la partie et indication du joueur dont c'est le tour.</span></li></ul>
+        <p class="tags">C++ · Qt 6 · Qt Widgets · QPainter · CMake</p>
+        <a href="https://github.com/arayanenb/qt-chess-game" class="link" target="_blank" rel="noopener noreferrer">Voir le projet sur GitHub →</a>
+      </article>
+      <article class="card tilt wide">
+        <p class="project-label"><span aria-hidden="true">&lt;/&gt;</span> Développement web · Portfolio personnel</p>
+        <h3>Mon portfolio — Web &amp; 3D</h3>
+        <p>Un site personnel pour présenter mon parcours, mes compétences et mes projets. Une interface responsive en HTML, CSS et JavaScript, enrichie d'un arrière-plan 3D avec Three.js et d'animations au défilement.</p>
+        <ul class="project-details"><li><strong>Interface responsive</strong><span>Navigation adaptée au mobile et mise en page pour différents écrans.</span></li><li><strong>Interactions &amp; animations</strong><span>Scène 3D, effets d'inclinaison et prise en compte des préférences de réduction des animations.</span></li><li><strong>Déploiement</strong><span>Code hébergé sur GitHub et site déployé sur Vercel.</span></li></ul>
+        <p class="tags">HTML · CSS · JavaScript · Three.js · GitHub · Vercel</p>
+        <a href="https://github.com/yfaraj-PRO/portfolio" class="link" target="_blank" rel="noopener noreferrer">Voir le projet sur GitHub →</a>
       </article>
     </div>
   </section>
@@ -72,6 +90,7 @@
     <a class="btn" href="mailto:y.faraj@esisa.ac.ma">y.faraj@esisa.ac.ma</a>
     <p class="infos"><a href="tel:+212667682014">+212 6 67 68 20 14</a> · Fès, Maroc</p>
     <div class="social">
+      <a href="https://www.linkedin.com/in/yassine-faraj-0b757b3b6" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Yassine Faraj"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96C2 21.32 2.69 22 3.55 22h16.9c.86 0 1.55-.68 1.55-1.52V3.52C22 2.68 21.31 2 20.45 2ZM7.93 18.75H4.98V9.2h2.95v9.55ZM6.46 7.9a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42Zm12.29 10.85H15.8V14.1c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.51V9.2h2.83v1.3h.04c.39-.74 1.36-1.52 2.79-1.52 2.98 0 3.58 1.96 3.58 4.51v5.26Z"/></svg></a>
       <a href="https://github.com/yfaraj-PRO" target="_blank" rel="noopener" aria-label="GitHub"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23a11.5 11.5 0 0 1 3.003-.404c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222 0 1.606-.015 2.896-.015 3.286 0 .315.216.694.825.576C20.565 21.796 24 17.3 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
     </div>
   </section>
