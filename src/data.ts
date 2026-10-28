@@ -1,0 +1,17 @@
+export const profile = {
+ name: 'Yassine Faraj', email: 'y.faraj@esisa.ac.ma', phone: '+212 6 67 68 20 14', location: 'Fès, Maroc',
+ github: 'https://github.com/yfaraj-PRO', linkedin: 'https://www.linkedin.com/in/yassine-faraj-0b757b3b6',
+ about: 'Étudiant en troisième année d’ingénierie logicielle à l’ESISA, à Fès, je me forme à la conception et au développement de logiciels. Du moteur de jeu en C++ aux interfaces React et Vue.js, j’aime relier la logique à l’expérience utilisateur. J’aime mettre mes compétences en pratique à travers des projets concrets.',
+};
+export const skills = [
+ { name: 'Frontend', code: '</>', description: 'Construire des interfaces web et leurs interactions.', tech: ['HTML', 'CSS', 'JavaScript', 'React', 'Vue.js'] },
+ { name: 'Design & UX', code: '✳', description: 'Concevoir des interfaces claires, lisibles et adaptées à tous les écrans.', tech: ['UI/UX', '21st.dev', 'Responsive design'] },
+ { name: 'Programmation', code: '{ }', description: 'Développer la logique, manipuler les données et créer des applications de bureau.', tech: ['C', 'C++', 'Java', 'Python', 'SQL', 'Assembleur', 'Qt 6 / Qt Widgets'] },
+ { name: 'Calcul scientifique', code: 'ƒ', description: 'Explorer les outils de calcul et de programmation scientifique.', tech: ['R', 'Maple', 'MATLAB'] },
+ { name: 'Outils & environnement', code: '⌘', description: 'Versionner mes projets, configurer leur compilation et travailler sous Linux.', tech: ['Git', 'GitHub', 'Linux', 'CMake'] },
+ { name: 'Backend & MERN', code: '↗', learning: true, description: 'J’approfondis les API REST, les opérations CRUD, le hachage des mots de passe avec bcryptjs et la connexion d’un frontend React à une API.', tech: ['Node.js', 'Express', 'MongoDB', 'MongoDB Atlas', 'MongoDB Compass', 'Mongoose', 'API REST / CRUD', 'Postman', 'bcryptjs', 'npm', 'Vite'] },
+];
+export const projects = [
+ { id:'chess', name:'Qt Chess Game', category:'Application de bureau', number:'01', summary:'La logique du jeu. Le plaisir de l’interaction.', description:'Une application de bureau développée en C++ avec Qt 6, qui associe un moteur de jeu à un échiquier graphique interactif. Le projet sépare la logique des échecs, le dessin du plateau et les commandes de la fenêtre.', features:['Sélection et déplacement des pièces à la souris, avec surbrillance des cases.', 'Deux modes : joueur contre joueur ou joueur contre l’ordinateur.', 'Validation des déplacements, protection du roi, détection de l’échec, du mat et du pat.', 'Interface Qt Widgets : choix du mode, réinitialisation et indication du joueur actif.'], tech:['C++','Qt 6','Qt Widgets','QPainter','CMake'], github:'https://github.com/arayanenb/qt-chess-game', demo: null },
+ { id:'portfolio', name:'Portfolio — Web & 3D', category:'Expérience web', number:'02', summary:'Une fenêtre sur mon univers digital.', description:'Un site personnel pour présenter mon parcours, mes compétences et mes projets. Une interface responsive en HTML, CSS et JavaScript, enrichie d’un arrière-plan 3D avec Three.js et d’animations au défilement.', features:['Navigation mobile et mise en page responsive.', 'Scène Three.js, effets d’inclinaison et animations au défilement.', 'Prise en compte des préférences de réduction des animations.', 'Code hébergé sur GitHub et site déployé sur Vercel.'], tech:['HTML','CSS','JavaScript','Three.js','GitHub','Vercel'], github:'https://github.com/yfaraj-PRO/portfolio', demo:'https://portfolio-seven-snowy-acz9tytsam.vercel.app/' },
+];
