@@ -24,13 +24,7 @@ Un GLB/GLTF peut remplacer le portrait via `<InteractiveAvatar3D modelUrl="/avat
 
 ## Contact
 
-Le formulaire envoie désormais les champs par requête AJAX à FormSubmit, sans navigation ni ouverture de la messagerie. Destination confirmée : `y.faraj@esisa.ac.ma`. Aucune clé API n’est requise pour cette intégration.
-
-**Activation nécessaire :** lors de la première soumission réelle, FormSubmit adresse un e-mail au destinataire. Cliquer sur « Activate Form » avant de considérer la réception comme opérationnelle. L’activation doit être faite pour le formulaire en production ; les tests locaux ne déclenchent pas d’e-mails. Le service peut conserver les soumissions en attente d’activation, selon sa documentation : https://formsubmit.co/help.
-
-`src/contact.ts` vérifie la réponse HTTP et le champ `success` (booléen `true` ou chaîne `"true"`). Une chaîne `"false"`, une activation en attente, une erreur réseau ou un délai dépassé ne produisent jamais de confirmation d’envoi et conservent les champs. Délai de 20 secondes, protection contre les doubles soumissions, validation et champ piège anti-spam. L’API AJAX utilise `_captcha=false` et les protections du fournisseur ; aucun autorépondeur n’est activé.
-
-`VITE_CONTACT_ENDPOINT` peut remplacer l’URL par l’identifiant opaque fourni après activation. Cette variable est publique : ne jamais y placer un secret. Le fournisseur traite les informations saisies pour l’envoi du message. Les liens de contact e-mail hors formulaire restent disponibles.
+Le formulaire appelle désormais /api/contact sur Vercel. L’envoi côté serveur utilise Resend vers y.faraj@esisa.ac.ma ; le navigateur ne contacte plus FormSubmit. Configuration de RESEND_API_KEY et limites de l’expéditeur de test : voir CONTACT-SETUP.md. Sans configuration, aucun succès n’est simulé. Les tests automatisés ne constituent pas une preuve de réception en boîte.
 
 ## Vérification
 

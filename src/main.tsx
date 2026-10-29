@@ -12,7 +12,7 @@ function App(){
  const [menu,setMenu]=useState(false),[active,setActive]=useState('accueil'),[filter,setFilter]=useState('Tous'),[detail,setDetail]=useState<string|null>(null),[skill,setSkill]=useState(0),[copied,setCopied]=useState(false),[sending,setSending]=useState(false),[notice,setNotice]=useState('');
  const dialog=useRef<HTMLDialogElement>(null);
  const sendingRef=useRef(false);
- const [contactTone,setContactTone]=useState<'success'|'error'|'activation'|''>('');
+ const [contactTone,setContactTone]=useState<'success'|'error'|''>('');
  const selected=projects.find(p=>p.id===detail);
  useEffect(()=>{const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');if(e.target.id)setActive(e.target.id)}}),{threshold:.16});document.querySelectorAll('section,.reveal').forEach(e=>observer.observe(e));return()=>observer.disconnect()},[]);
  useEffect(()=>{if(detail)dialog.current?.showModal();else dialog.current?.close()},[detail]);
@@ -21,9 +21,8 @@ function App(){
   const form=e.currentTarget;const fields=new FormData(form);
   sendingRef.current=true;setSending(true);setNotice('');setContactTone('');
   try{
-   const result=await submitContact({name:String(fields.get('name')||''),email:String(fields.get('email')||''),message:String(fields.get('message')||''),website:String(fields.get('website')||'')});
-   if(result.kind==='activation'){setContactTone('activation');setNotice('Le formulaire ne peut pas encore recevoir de messages. Merci de réessayer plus tard. Ton texte est conservé.');}
-   else{setContactTone('success');setNotice('Ton message a bien été transmis. Merci ! Je te répondrai à l’adresse indiquée.');form.reset();}
+   await submitContact({name:String(fields.get('name')||''),email:String(fields.get('email')||''),message:String(fields.get('message')||''),website:String(fields.get('website')||'')});
+   setContactTone('success');setNotice('Ton message a bien été transmis. Merci ! Je te répondrai à l’adresse indiquée.');form.reset();
   }catch(error){setContactTone('error');setNotice(error instanceof Error?error.message:'L’envoi a échoué. Ton message est conservé ; réessaie dans quelques instants.');}
   finally{sendingRef.current=false;setSending(false)}
  }
