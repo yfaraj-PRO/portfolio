@@ -4,3 +4,6 @@ dist/
 *.tar.gz
 desktop.png
 mobile.png
+
+tmp/
+preview-*.png

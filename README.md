@@ -8,6 +8,12 @@ React, TypeScript, Vite, Three.js, React Three Fiber et Drei. Design sombre viol
 
 ## Contenu
 
+### Parcours sportif — ajout local du 29 octobre 2026
+
+La rubrique `src/BasketballSection.tsx` reprend les informations essentielles du CV sportif fourni : poste de meneur/arrière, MAS de Fès depuis 2024, formation à Nejme Fès, palmarès 2025/2026, sélections marocaines U16/U17 et objectif sport-études en France. Les statistiques seniors ne sont pas affichées, conformément à la demande. Les coordonnées sportives sont distinctes des coordonnées professionnelles. Le lien de highlights est repris de l’annotation du PDF ; le CV source est disponible dans `public/cv-basketball-yassine-faraj.pdf` sans modification.
+
+La rubrique sportive conserve l’identité visuelle et les informations professionnelles du portfolio.
+
 Modifier `src/data.ts`. Les informations personnelles, les compétences et les deux projets proviennent de https://portfolio-seven-snowy-acz9tytsam.vercel.app/ (consulté le 27 octobre 2026). Aucun stage, date de formation ou niveau de maîtrise supplémentaire n’a été inventé. Le CV imprimable est dans `public/cv.html`.
 
 ## Portrait
