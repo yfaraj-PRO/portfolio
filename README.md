@@ -24,7 +24,13 @@ Un GLB/GLTF peut remplacer le portrait via `<InteractiveAvatar3D modelUrl="/avat
 
 ## Contact
 
-Par défaut, le formulaire valide les champs et ouvre un e-mail prérempli ; il ne prétend pas avoir envoyé le message. Pour l’envoi direct, définir `VITE_CONTACT_ENDPOINT` dans `.env` avec un endpoint HTTPS qui accepte du JSON (`name`, `email`, `message`) et autorise l’origine du site via CORS, puis reconstruire. Le succès s’affiche uniquement après une réponse HTTP réussie. Ne jamais placer une clé secrète dans une variable `VITE_`.
+Le formulaire envoie désormais les champs par requête AJAX à FormSubmit, sans navigation ni ouverture de la messagerie. Destination confirmée : `y.faraj@esisa.ac.ma`. Aucune clé API n’est requise pour cette intégration.
+
+**Activation nécessaire :** lors de la première soumission réelle, FormSubmit adresse un e-mail au destinataire. Cliquer sur « Activate Form » avant de considérer la réception comme opérationnelle. L’activation doit être faite pour le formulaire en production ; les tests locaux ne déclenchent pas d’e-mails. Le service peut conserver les soumissions en attente d’activation, selon sa documentation : https://formsubmit.co/help.
+
+`src/contact.ts` vérifie la réponse HTTP et le champ `success` (booléen `true` ou chaîne `"true"`). Une chaîne `"false"`, une activation en attente, une erreur réseau ou un délai dépassé ne produisent jamais de confirmation d’envoi et conservent les champs. Délai de 20 secondes, protection contre les doubles soumissions, validation et champ piège anti-spam. L’API AJAX utilise `_captcha=false` et les protections du fournisseur ; aucun autorépondeur n’est activé.
+
+`VITE_CONTACT_ENDPOINT` peut remplacer l’URL par l’identifiant opaque fourni après activation. Cette variable est publique : ne jamais y placer un secret. Le fournisseur traite les informations saisies pour l’envoi du message. Les liens de contact e-mail hors formulaire restent disponibles.
 
 ## Vérification
 

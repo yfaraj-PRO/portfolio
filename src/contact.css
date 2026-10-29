@@ -1,0 +1,8 @@
+.contact-honeypot{position:absolute!important;left:-10000px!important;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none}
+.contact form{position:relative}
+.contact .form-status:empty{display:none}
+.contact .form-status{padding:13px 15px;border:1px solid #a999ff33;border-radius:6px;background:#a999ff08;line-height:1.7;overflow-wrap:anywhere}
+.contact .form-status[data-tone="success"]{color:#b6e5cb;border-color:#8bc8a64d;background:#5ca9830d}
+.contact .form-status[data-tone="error"],.contact .form-status[data-tone="activation"]{color:#ead3a9;border-color:#d4b17450;background:#c4a3610b}
+.contact .form-note{line-height:1.8}
+.contact form[aria-busy="true"] .primary{cursor:progress;opacity:.7}
