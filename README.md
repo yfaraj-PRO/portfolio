@@ -14,7 +14,7 @@ La rubrique `src/BasketballSection.tsx` reprend les informations essentielles du
 
 La rubrique sportive conserve l’identité visuelle et les informations professionnelles du portfolio.
 
-Modifier `src/data.ts`. Les informations personnelles, les compétences et les deux projets proviennent de https://portfolio-seven-snowy-acz9tytsam.vercel.app/ (consulté le 27 octobre 2026). Aucun stage, date de formation ou niveau de maîtrise supplémentaire n’a été inventé. Le CV imprimable est dans `public/cv.html`.
+Modifier `src/data.ts`. Les informations personnelles, les compétences et les deux projets proviennent de https://portfolio-seven-snowy-acz9tytsam.vercel.app/ (consulté le 27 octobre 2026). Aucun stage, date de formation ou niveau de maîtrise supplémentaire n’a été inventé. Le CV imprimable est dans `public/cv-yassine-faraj.pdf`.
 
 ## Portrait
 
