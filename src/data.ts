@@ -12,6 +12,23 @@ export const skills = [
  { name: 'Backend & MERN', code: '↗', learning: true, description: 'J’approfondis les API REST, les opérations CRUD, le hachage des mots de passe avec bcryptjs et la connexion d’un frontend React à une API.', tech: ['Node.js', 'Express', 'MongoDB', 'MongoDB Atlas', 'MongoDB Compass', 'Mongoose', 'API REST / CRUD', 'Postman', 'bcryptjs', 'npm', 'Vite'] },
 ];
 export const projects = [
- { id:'chess', name:'Qt Chess Game', category:'Application de bureau', number:'01', summary:'La logique du jeu. Le plaisir de l’interaction.', description:'Une application de bureau développée en C++ avec Qt 6, qui associe un moteur de jeu à un échiquier graphique interactif. Le projet sépare la logique des échecs, le dessin du plateau et les commandes de la fenêtre.', features:['Sélection et déplacement des pièces à la souris, avec surbrillance des cases.', 'Deux modes : joueur contre joueur ou joueur contre l’ordinateur.', 'Validation des déplacements, protection du roi, détection de l’échec, du mat et du pat.', 'Interface Qt Widgets : choix du mode, réinitialisation et indication du joueur actif.'], tech:['C++','Qt 6','Qt Widgets','QPainter','CMake'], github:'https://github.com/arayanenb/qt-chess-game', demo: null },
- { id:'portfolio', name:'Portfolio — Web & 3D', category:'Expérience web', number:'02', summary:'Une fenêtre sur mon univers digital.', description:'Un site personnel pour présenter mon parcours, mes compétences et mes projets. Une interface responsive en HTML, CSS et JavaScript, enrichie d’un arrière-plan 3D avec Three.js et d’animations au défilement.', features:['Navigation mobile et mise en page responsive.', 'Scène Three.js, effets d’inclinaison et animations au défilement.', 'Prise en compte des préférences de réduction des animations.', 'Code hébergé sur GitHub et site déployé sur Vercel.'], tech:['HTML','CSS','JavaScript','Three.js','GitHub','Vercel'], github:'https://github.com/yfaraj-PRO/portfolio', demo:'https://portfolio-seven-snowy-acz9tytsam.vercel.app/' },
+ { id:'chess', platform:'Desktop', name:'Qt Chess Game', category:'Application de bureau', number:'01', summary:'La logique du jeu. Le plaisir de l’interaction.', description:'Une application de bureau développée en C++ avec Qt 6, qui associe un moteur de jeu à un échiquier graphique interactif. Le projet sépare la logique des échecs, le dessin du plateau et les commandes de la fenêtre.', features:['Sélection et déplacement des pièces à la souris, avec surbrillance des cases.', 'Deux modes : joueur contre joueur ou joueur contre l’ordinateur.', 'Validation des déplacements, protection du roi, détection de l’échec, du mat et du pat.', 'Interface Qt Widgets : choix du mode, réinitialisation et indication du joueur actif.'], tech:['C++','Qt 6','Qt Widgets','QPainter','CMake'], github:'https://github.com/arayanenb/qt-chess-game', demo: null },
+ { id:'portfolio', platform:'Web', name:'Portfolio — Web & 3D', category:'Expérience web', number:'02', summary:'Une fenêtre sur mon univers digital.', description:'Un site personnel pour présenter mon parcours, mes compétences et mes projets. Une interface responsive en HTML, CSS et JavaScript, enrichie d’un arrière-plan 3D avec Three.js et d’animations au défilement.', features:['Navigation mobile et mise en page responsive.', 'Scène Three.js, effets d’inclinaison et animations au défilement.', 'Prise en compte des préférences de réduction des animations.', 'Code hébergé sur GitHub et site déployé sur Vercel.'], tech:['HTML','CSS','JavaScript','Three.js','GitHub','Vercel'], github:'https://github.com/yfaraj-PRO/portfolio', demo:'https://portfolio-seven-snowy-acz9tytsam.vercel.app/' },
+ {
+  id: 'ledger',
+  platform: 'Web',
+  name: 'Ledger Qualité',
+  category: 'Qualité des données',
+  number: '03',
+  summary: 'Repérer et corriger les anomalies dans les transactions bancaires.',
+  description: 'Un tableau de bord de qualité des données bancaires. Chaque import CSV crée un lot de transactions dont on peut suivre les anomalies et les corrections.',
+  features: [
+   'Importer des transactions depuis un fichier CSV et consulter les indicateurs par lot.',
+   'Rechercher les anomalies et les filtrer selon leur statut.',
+   'Corriger une valeur, consulter l’historique des modifications et exporter les corrections.',
+  ],
+  tech: ['HTML', 'CSS', 'JavaScript', 'CSV'],
+  github: null,
+  demo: 'https://banking-quality-docs.vercel.app/',
+ },
 ];

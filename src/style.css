@@ -6,3 +6,39 @@
 @media(max-width:600px){header{padding:0 6%}.nav-contact{font-size:9px;margin-right:12px;padding:10px;gap:8px}.logo{font-size:34px}.hero{display:flex;flex-direction:column;padding:45px 7% 92px;gap:32px;align-items:stretch}.hero-copy>.eyebrow{font-size:7px;margin-top:26px;letter-spacing:1.1px}.hero h1{font-size:clamp(38px,10vw,58px);letter-spacing:-2px;line-height:1.12;white-space:normal}.intro{font-size:14px;max-width:100%}.availability{font-size:10px}.hero-actions{gap:25px;margin-top:25px}.hero-actions .button{font-size:12px;padding:15px 17px}.hero-meta{margin-top:25px;font-size:10px;gap:13px}.portrait-stage{height:405px;max-width:360px;align-self:center;width:100%;margin-top:8px}.portrait-frame{width:270px;height:380px}.orbit-one{width:320px;height:340px}.orbit-two{width:335px;height:240px}.tag-code{right:-5px;top:65px;font-size:10px}.tag-stack{left:-5px;bottom:65px;font-size:10px}.portrait-hint{bottom:-18px;font-size:8px}.portrait-caption>span{font-size:13px}.portrait-caption small{font-size:6px}.hero-bottom{bottom:15px;left:7%;right:7%}.hero-bottom>a{font-size:7px}.star-one{right:10px;top:5px}.tech-strip{padding:22px 7%;flex-wrap:wrap;justify-content:center;gap:15px 20px}.tech-strip b{font-size:15px}.tech-strip i{font-size:9px}.tech-strip i:last-of-type{display:none}.section{padding:65px 7%}.section-label>span:first-child{font-size:8px;letter-spacing:1.5px}.section-label>small{display:none}h2{font-size:33px;letter-spacing:-1.4px}.about-layout h2 br{display:block}.about-layout p.large-copy{font-size:17px}.about-layout p{font-size:14px}.stats{margin-top:35px;padding-top:28px;gap:15px}.stats>div{padding-left:15px}.stats strong{font-size:35px}.stats span{font-size:6px;line-height:1.7;letter-spacing:.8px}.section-heading{align-items:flex-start;flex-direction:column;gap:25px;margin-bottom:30px}.section-heading h2{font-size:33px}.filters button{font-size:11px;padding:9px 20px}.project-grid{grid-template-columns:1fr;gap:40px}.project-art{height:300px}.chess-board{width:235px;height:235px}.chess-board>span{font-size:27px}.browser-art{height:215px;top:66px}.browser-content{padding:22px}.browser-content>b{font-size:29px}.mini-orb{width:100px;height:100px}.project-info h3{font-size:24px}.project-info p{font-size:13px}.chips>span{font-size:10px}.skill-layout{grid-template-columns:1fr;gap:25px}.skill-buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px}.skill-buttons button{padding:12px 9px;font-size:11px;border:1px solid var(--line);border-radius:5px;gap:8px;min-height:60px;flex-wrap:wrap;align-content:center}.skill-buttons button.selected{border:1px solid #967bbf;background:#a48bdb12}.skill-buttons button>span{width:20px;font-size:17px}.skill-buttons button>svg{display:none}.skill-buttons small{font-size:6px;margin-left:27px}.skill-panel{padding:15px 24px 26px}.skill-visual{height:230px}.sphere-ring{width:240px}.s1{left:15px}.s2{right:10px}.s3{right:35px}.skill-panel p{font-size:14px}.experience-layout{gap:40px}.timeline{margin-left:5px;padding-left:25px}.timeline article:before{left:-30px}.timeline p{font-size:14px}.services-grid{grid-template-columns:1fr;gap:35px}.services-grid article{padding-top:20px}.services-grid h3{font-size:24px;margin:20px 0 10px}.services-grid p{font-size:14px}.contact .section-label{align-items:flex-start;flex-direction:column;gap:20px}.contact-layout{grid-template-columns:1fr;gap:40px}.contact h2{font-size:48px;letter-spacing:-2px}.email-link{font-size:19px}.contact-details{font-size:12px}.social-links{gap:26px}.social-links a{font-size:12px}input,textarea{font-size:16px}label{font-size:12px}footer{padding:22px 7%;flex-wrap:wrap;gap:15px}footer>span{order:3;width:100%;font-size:9px}footer>a:last-child{margin-left:auto;font-size:10px}dialog{padding:48px 24px 30px}dialog h2{font-size:28px}.dialog-actions{flex-wrap:wrap}.form-note{font-size:11px!important}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
 @media(max-width:600px){.portrait-stage{clip-path:inset(-40px -12px -35px -12px)}}
+
+.project-art.ledger {
+  background: radial-gradient(ellipse at 70% 70%, #1e3446, var(--bg) 75%);
+}
+
+.ledger-preview {
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  color: var(--text);
+}
+
+.ledger-preview > svg {
+  color: var(--cyan);
+}
+
+.ledger-preview > strong {
+  font-family: var(--display);
+  font-size: clamp(16px, 2vw, 24px);
+  font-weight: 500;
+}
+
+.ledger-preview-panels {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.ledger-preview-panels > span {
+  padding: 9px 6px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 11px;
+}
